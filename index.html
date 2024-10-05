@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive iPhone Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">iPhone</div>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="hero-content">
+        <h1>The Future of iPhone</h1>
+        <p>Experience the next generation of smartphone technology.</p>
+        <a href="#pricing" class="btn">Buy Now</a>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <div class="features-list">
+        <div class="feature">
+          <h3>Revolutionary Camera</h3>
+          <p>
+            Capture stunning photos with the most advanced camera system ever.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Powerful Processor</h3>
+          <p>
+            Powered by the fastest chip in a smartphone, for blazing-fast
+            performance.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>5G Connectivity</h3>
+          <p>Experience next-level speed with superfast 5G connectivity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <div class="gallery-images">
+          <img src="./photos/White.jpg" alt="Image 1" />
+          <img src="./photos/White.jpg" alt="Image 2" />
+          <img src="./photos/White.jpg" alt="Image 3" />
+          <img src="./photos/White.jpg" alt="Image 4" />
+          <img src="./photos/White.jpg" alt="Image 5" />
+        </div>
+      </div>
+      <div class="gallery-controls">
+        <button type="button" onclick="scrollGalleryLeft()">←</button>
+        <button type="button" onclick="scrollGalleryRight()">→</button>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing-table">
+        <div class="price-option">
+          <h3>iPhone 12</h3>
+          <p>Starting at $799</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="price-option">
+          <h3>iPhone 12 Pro</h3>
+          <p>Starting at $999</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 iPhone. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

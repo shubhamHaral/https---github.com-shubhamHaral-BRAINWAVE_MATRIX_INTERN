@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#hero {
+    background: url('./photos/iphone-12-pro-max-hoyle-product-hero.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    background-color: #f8b400;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+#features {
+    padding: 3rem 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    width: 30%;
+    min-width: 250px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#gallery {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.gallery-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.gallery-images {
+    display: inline-block;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-controls {
+    margin-top: 10px;
+}
+
+.gallery-controls button {
+    padding: 10px;
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gallery-controls button:hover {
+    background-color: #333;
+    color: white;
+}
+
+#pricing {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.price-option {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 250px;
+}
+
+.price-option h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.price-option .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f8b400;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Hide the scrollbar on Chrome, Safari, and Edge */
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero {
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .features-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature {
+        width: 80%;
+    }
+
+    .gallery-container {
+        max-width: 100%;
+    }
+
+    .pricing-table {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .price-option {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .gallery-images img {
+        width: 100%;
+    }
+
+    .price-option {
+        width: 100%;
+    }
+}
